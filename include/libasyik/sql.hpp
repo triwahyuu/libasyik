@@ -1,6 +1,10 @@
 #ifndef LIBASYIK_ASYIK_SQL_HPP
 #define LIBASYIK_ASYIK_SQL_HPP
 
+#include <soci/postgresql/soci-postgresql.h>
+#include <soci/soci.h>
+#include <soci/sqlite3/soci-sqlite3.h>
+
 #include <list>
 #include <string>
 
@@ -11,9 +15,6 @@
 #include "common.hpp"
 #include "internal/soci_internal.hpp"
 #include "service.hpp"
-#include "soci-postgresql.h"
-#include "soci-sqlite3.h"
-#include "soci.h"
 
 namespace fibers = boost::fibers;
 using fiber = boost::fibers::fiber;

@@ -21,7 +21,7 @@ RUN apt-get -y update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN apt-get -y update && \
-    apt-get install -y libpq-dev libsqlite3-dev unzip && \
+    apt-get install -y libpq-dev libsqlite3-dev postgresql-server-dev-all unzip && \
     cd ~/temp && \
     git clone https://github.com/jtv/libpqxx.git && cd libpqxx && \
     git checkout 7.6.1 && \
